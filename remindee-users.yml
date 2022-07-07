@@ -16,11 +16,11 @@ spring:
         jwt:
           issuer-uri: http://auth-server:8001
   datasource:
-    initialization-mode: always
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     url: jdbc:mysql://localhost:3306/remindee-users
     password: root
   jpa:
+    defer-datasource-initialization: always
     hibernate:
       ddl-auto: update
