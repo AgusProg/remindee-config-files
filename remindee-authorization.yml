@@ -21,3 +21,9 @@ remindee:
     token:
       validity:
         seconds: '3600'
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
