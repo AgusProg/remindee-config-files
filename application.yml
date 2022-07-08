@@ -1,0 +1,4 @@
+remindee:
+  jwt:
+    signing:
+      key: s3cr3t
