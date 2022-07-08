@@ -1,5 +1,5 @@
 server:
-  port:8001
+  port: 8001
 remindee:
   client-id: client-id
   client-secret: s3cr3t
