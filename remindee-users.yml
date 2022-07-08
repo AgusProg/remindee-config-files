@@ -23,4 +23,4 @@ spring:
   jpa:
     defer-datasource-initialization: always
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
