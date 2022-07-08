@@ -1,0 +1,23 @@
+server:
+  port:8001
+remindee:
+  client-id: client-id
+  client-secret: s3cr3t
+  refresh:
+    token:
+      validity:
+        seconds: '3600'
+  scopes: read,write
+  check:
+    token:
+      access: isAuthenticated()
+  token:
+    key:
+      access: permitAll()
+  authorization:
+    grant:
+      types: password,refresh_token
+  access:
+    token:
+      validity:
+        seconds: '3600'
