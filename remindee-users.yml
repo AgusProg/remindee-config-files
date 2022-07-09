@@ -27,3 +27,8 @@ spring:
     defer-datasource-initialization: always
     hibernate:
       ddl-auto: update
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
