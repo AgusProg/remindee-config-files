@@ -12,7 +12,7 @@ eureka:
 spring:
   security:
     oauth2:
-      resource:
+      resourceserver:
         jwt:
           issuer-uri: http://localhost:8001/oauth/token_key
   datasource:
