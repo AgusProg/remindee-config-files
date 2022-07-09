@@ -14,10 +14,7 @@ spring:
     oauth2:
       resource:
         jwt:
-          key-uri: http://localhost:8001/oauth/token_key
-      client:
-        client-id: DEV
-        client-secret: a5629904-ffa8-11ec-b939-0242ac120002
+          issuer-uri: http://localhost:8001/oauth/token_key
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
