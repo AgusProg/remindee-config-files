@@ -1,5 +1,17 @@
 server:
   port: 8001
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/remindee-auth
+    password: root
+  jpa:
+    defer-datasource-initialization: always
+    hibernate:
+      ddl-auto: update
+
 remindee:
   client-id: client-id
   client-secret: s3cr3t
