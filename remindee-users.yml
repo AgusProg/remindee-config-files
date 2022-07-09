@@ -12,9 +12,12 @@ eureka:
 spring:
   security:
     oauth2:
-      resourceserver:
+      resource:
         jwt:
-          issuer-uri: http://localhost:8001
+          key-uri: http://localhost:8001/oauth/token_key
+        client:
+          client-id: DEV
+          client-secret: a5629904-ffa8-11ec-b939-0242ac120002
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
