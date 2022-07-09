@@ -14,7 +14,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8001/oauth/token_key
+          issuer-uri: http://localhost:8001/.well-known/openid-configuration
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
