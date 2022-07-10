@@ -9,15 +9,6 @@ eureka:
     preferIpAddress: true
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
-security:
-  oauth2:
-    resource:
-      jwt:
-        key-uri: http://localhost:8001/oauth/token_key
-      client:
-        client-id: DEV
-        client-secret: a5629904-ffa8-11ec-b939-0242ac120002
-
 spring:
 
   datasource:
@@ -29,6 +20,12 @@ spring:
     defer-datasource-initialization: always
     hibernate:
       ddl-auto: update
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8001/.well-known/openid-configuration
 logging:
   level:
     org:
